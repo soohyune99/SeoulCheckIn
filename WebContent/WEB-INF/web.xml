@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>Seoul-CheckIn</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>		
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>MainFrontController</servlet-name>
+		<servlet-class>com.seoulcheckin.app.main.MainFrontController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>MainFrontController</servlet-name>
+		<url-pattern>*.kr</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>MemberFrontController</servlet-name>
+		<servlet-class>com.seoulcheckin.app.member.MemberFrontController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>MemberFrontController</servlet-name>
+		<url-pattern>*.me</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>MapFrontController</servlet-name>
+		<servlet-class>com.seoulcheckin.app.map.MapFrontController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>MapFrontController</servlet-name>
+		<url-pattern>*.mp</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>BoardFrontController</servlet-name>
+		<servlet-class>com.seoulcheckin.app.board.BoardFrontController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>BoardFrontController</servlet-name>
+		<url-pattern>*.bo</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CommentFrontController</servlet-name>
+		<servlet-class>com.seoulcheckin.app.comment.CommentFrontController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>CommentFrontController</servlet-name>
+		<url-pattern>*.cm</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SchoolFrontController</servlet-name>
+		<servlet-class>com.seoulcheckin.app.school.SchoolFrontController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SchoolFrontController</servlet-name>
+		<url-pattern>*.sc</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>VisaFrontController</servlet-name>
+		<servlet-class>com.seoulcheckin.app.visa.VisaFrontController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>VisaFrontController</servlet-name>
+		<url-pattern>*.vs</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>MessageFrontController</servlet-name>
+		<servlet-class>com.seoulcheckin.app.message.MessageFrontController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>MessageFrontController</servlet-name>
+		<url-pattern>*.ms</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>NoticeFrontController</servlet-name>
+		<servlet-class>com.seoulcheckin.app.notice.NoticeFrontController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>NoticeFrontController</servlet-name>
+		<url-pattern>*.nt</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>FaqFrontController</servlet-name>
+		<servlet-class>com.seoulcheckin.app.faq.FaqFrontController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>FaqFrontController</servlet-name>
+		<url-pattern>*.aq</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>BannerFrontController</servlet-name>
+		<servlet-class>com.seoulcheckin.app.banner.BannerFrontController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>BannerFrontController</servlet-name>
+		<url-pattern>*.bn</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>FileFrontController</servlet-name>
+		<servlet-class>com.seoulcheckin.app.file.FileFrontController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>FileFrontController</servlet-name>
+		<url-pattern>*.fl</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>MyProgramFrontController</servlet-name>
+		<servlet-class>com.seoulcheckin.app.myprogram.MyProgramFrontController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>MyProgramFrontController</servlet-name>
+		<url-pattern>*.pr</url-pattern>
+	</servlet-mapping>
+
+</web-app>

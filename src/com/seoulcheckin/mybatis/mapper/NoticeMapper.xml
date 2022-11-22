@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Notice">
+
+	<!-- 공지사항 title 가져오기 -->
+	<select id="selectNoticeTitle" resultType="noticeVO">
+		select notice_title,
+		notice_number from tbl_notice
+	</select>
+
+	<!-- 공지사항 제목 클릭시 상세페이지 이동 -->
+	<select id="selectNoticeDetail" parameterType="_int" resultType="noticeVO">
+		select notice_title, notice_article from tbl_notice where notice_number=#{noticeNumber}
+	</select>
+	
+	<!-- 검색 결과 - 공지사항 -->
+	<select id="NoticeSearchSubmitResult" parameterType="string" resultType="noticeVO">
+		select notice_number, notice_title, notice_article 
+		from tbl_notice 
+		where notice_title or notice_article 
+		like CONCAT ('%',#{searchContent},'%') 
+	</select>
+	
+
+
+</mapper>

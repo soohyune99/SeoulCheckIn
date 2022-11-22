@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Navigator">
+
+	<!-- 4개의 네비게이터를 입력했을 때 경우의 수 1개 리턴 -->
+	<!-- 대륙 국가.지역 입국목적 체류기간 일치시 해당 네비게이터넘버 리턴 -->
+	<select id="selectNaviNumber" parameterType="navigatorVO" resultType="_int">
+		select navigator_number
+		from tbl_navigator
+		where 
+		navigator_continent = #{navigatorContinent} and
+		navigator_nation = #{navigatorNation} and
+		navigator_purpose = #{navigatorPurpose} and
+		navigator_period = #{navigatorPeriod}
+	</select>	
+
+</mapper>

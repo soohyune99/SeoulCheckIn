@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Faq">
+
+	<!-- 외국인 회원 자주 묻는 질문 Title List-->
+	<select id="selectForTitle" resultType="faqVO">
+		select faq_title, faq_number from tbl_faq where faq_mcategory=20
+	</select>
+
+	<!-- 내국인 회원 자주 묻는 질문 Title List-->
+	<select id="selectLocTitle" resultType="faqVO">
+		select faq_title, faq_number from tbl_faq where faq_mcategory=10
+	</select>
+	
+	<!-- 외국인 제목 클릭시 상세페이지 이동 -->
+	<select id="selectForDetail" parameterType="_int" resultType="faqVO">
+		select faq_title, faq_article, faq_number from tbl_faq where faq_number=#{faqNumber}
+	</select>
+
+	<!-- 내국인 제목 클릭시 상세페이지 이동 -->
+	<select id="selectLocDetail" parameterType="_int" resultType="faqVO">
+		select faq_title, faq_article, faq_number from tbl_faq where faq_number=#{faqNumber}
+	</select>
+
+	<!-- 검색 결과 - 내국인 -->
+	<select id="locSearchSubmitResult" parameterType="string" resultType="faqVO">
+		select faq_number, faq_title, faq_article 
+		from tbl_faq 
+		where faq_mcategory='10' and (faq_title or faq_article
+		like CONCAT ('%',#{searchContent},'%'))
+	</select>
+	
+	<!-- 검색 결과 - 외국인 -->
+	<select id="forSearchSubmitResult" parameterType="string" resultType="faqVO">
+		select faq_number, faq_title, faq_article 
+		from tbl_faq 
+		where faq_mcategory='20' and (faq_title or faq_article
+		like CONCAT ('%',#{searchContent},'%'))
+	</select>
+
+</mapper>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "https://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+	<settings>
+		<setting name="mapUnderscoreToCamelCase" value="true"/>
+	</settings>
+
+   <typeAliases>
+   
+   <!-- member Alias -->
+		<typeAlias type="com.seoulcheckin.app.member.vo.MemberVO" alias="memberVO"/>
+		<typeAlias type="com.seoulcheckin.app.member.vo.MemberDTO" alias="memberDTO"/>
+		<typeAlias type="com.seoulcheckin.app.member.dao.MemberDAO" alias="memberDAO"/>
+	<!-- member Alias -->
+   
+   <!-- school Alias -->
+		<typeAlias type="com.seoulcheckin.app.school.vo.SchoolDTO" alias="schoolDTO"/>
+		<typeAlias type="com.seoulcheckin.app.school.vo.SchoolVO" alias="schoolVO"/>
+		<typeAlias type="com.seoulcheckin.app.school.dao.SchoolDAO" alias="schoolDAO"/>
+	<!-- school Alias -->
+   
+   <!-- banner Alias -->
+      <typeAlias type="com.seoulcheckin.app.banner.vo.BannerVO" alias="bannerVO"/>
+      <typeAlias type="com.seoulcheckin.app.banner.dao.BannerDAO" alias="bannerDAO"/>
+   <!-- banner Alias -->
+   
+   <!-- faq Alias -->
+      <typeAlias type="com.seoulcheckin.app.faq.vo.FaqVO" alias="faqVO"/>
+      <typeAlias type="com.seoulcheckin.app.faq.dao.FaqDAO" alias="faqDAO"/>
+   <!-- faq Alias -->
+   
+   <!-- file Alias -->   
+      <typeAlias type="com.seoulcheckin.app.file.vo.FileVO" alias="fileVO"/>
+      <typeAlias type="com.seoulcheckin.app.file.dao.FileDAO" alias="fileDAO"/>
+   <!-- file Alias -->
+   
+   <!-- map Alias -->
+      <typeAlias type="com.seoulcheckin.app.map.vo.MapVO" alias="mapVO"/>
+      <typeAlias type="com.seoulcheckin.app.map.dao.MapDAO" alias="mapDAO"/>
+   <!-- map Alias -->
+   
+   <!-- message Alias -->
+      <typeAlias type="com.seoulcheckin.app.message.vo.MessageVO" alias="messageVO"/>
+      <typeAlias type="com.seoulcheckin.app.message.dao.MessageDAO" alias="messageDAO"/>
+      <typeAlias type="com.seoulcheckin.app.message.vo.MessageDTO" alias="messageDTO"/>
+   <!-- message Alias -->
+   
+   <!-- myprogram Alias -->
+      <typeAlias type="com.seoulcheckin.app.myprogram.vo.MyProgramVO" alias="myProgramVO"/>   
+      <typeAlias type="com.seoulcheckin.app.myprogram.dao.MyProgramDAO" alias="myProgramDAO"/>   
+   <!-- myprogram Alias -->
+
+   <!-- navigator Alias -->   
+      <typeAlias type="com.seoulcheckin.app.navigator.vo.NavigatorVO" alias="navigatorVO"/>
+      <typeAlias type="com.seoulcheckin.app.navigator.dao.NavigatorDAO" alias="navigatorDAO"/>
+   <!-- navigator Alias -->   
+   
+   <!-- visa Alias -->
+      <typeAlias type="com.seoulcheckin.app.visa.vo.VisaVO" alias="visaVO"/>
+      <typeAlias type="com.seoulcheckin.app.visa.dao.VisaDAO" alias="visaDAO"/>
+   <!-- visa Alias -->
+   
+   <!-- notice Alias -->
+      <typeAlias type="com.seoulcheckin.app.notice.vo.NoticeVO" alias="noticeVO"/>   
+      <typeAlias type="com.seoulcheckin.app.notice.dao.NoticeDAO" alias="noticeDAO"/>   
+   <!-- notice Alias -->
+   
+   <!-- board Alias -->
+      <typeAlias type="com.seoulcheckin.app.board.vo.KBoardVO" alias="kboardVO"/>
+      <typeAlias type="com.seoulcheckin.app.board.vo.EBoardVO" alias="eboardVO"/>
+      <typeAlias type="com.seoulcheckin.app.board.dao.KBoardDAO" alias="kboardDAO"/>
+      <typeAlias type="com.seoulcheckin.app.board.dao.EBoardDAO" alias="eboardDAO"/>
+      <typeAlias type="com.seoulcheckin.app.board.vo.KBoardDTO" alias="kboardDTO"/>
+      <typeAlias type="com.seoulcheckin.app.board.vo.EBoardDTO" alias="eboardDTO"/>
+   <!-- board Alias -->
+   
+   <!-- board Alias -->
+      <typeAlias type="com.seoulcheckin.app.comment.vo.KCommentVO" alias="kcommentVO"/>
+      <typeAlias type="com.seoulcheckin.app.comment.vo.ECommentVO" alias="ecommentVO"/>
+      <typeAlias type="com.seoulcheckin.app.comment.dao.KCommentDAO" alias="kcommentDAO"/>
+      <typeAlias type="com.seoulcheckin.app.comment.dao.ECommentDAO" alias="ecommentDAO"/>
+      <typeAlias type="com.seoulcheckin.app.comment.vo.KCommentDTO" alias="kcommentDTO"/>
+      <typeAlias type="com.seoulcheckin.app.comment.vo.ECommentDTO" alias="ecommentDTO"/>
+   <!-- board Alias -->
+   
+   <!-- map Alias -->
+      <typeAlias type="com.seoulcheckin.app.map.vo.MapVO" alias="mapVO"/>
+      <typeAlias type="com.seoulcheckin.app.message.vo.MessageVO" alias="messageVO"/>
+   <!-- map Alias -->
+      
+   </typeAliases>
+   
+   <environments default="mysql">
+      <environment id="mysql">
+         <transactionManager type="JDBC"/>
+         <dataSource type="POOLED">
+            <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="url" value="jdbc:mysql://localhost:3306/teamone"/>
+            <property name="username" value="root"/>
+            <property name="password" value="1234"/>
+         </dataSource>
+      </environment>
+   </environments>
+   
+   <mappers>
+      <mapper resource="com/seoulcheckin/mybatis/mapper/MemberMapper.xml"/>
+      <mapper resource="com/seoulcheckin/mybatis/mapper/FaqMapper.xml"/>
+      <mapper resource="com/seoulcheckin/mybatis/mapper/KBoardMapper.xml"/>
+      <mapper resource="com/seoulcheckin/mybatis/mapper/EBoardMapper.xml"/>
+      <mapper resource="com/seoulcheckin/mybatis/mapper/KCommentMapper.xml"/>
+      <mapper resource="com/seoulcheckin/mybatis/mapper/ECommentMapper.xml"/>
+      <mapper resource="com/seoulcheckin/mybatis/mapper/MapMapper.xml"/>
+      <mapper resource="com/seoulcheckin/mybatis/mapper/MessageMapper.xml"/>
+      <mapper resource="com/seoulcheckin/mybatis/mapper/NoticeMapper.xml"/>
+      <mapper resource="com/seoulcheckin/mybatis/mapper/SchoolMapper.xml"/>
+      <mapper resource="com/seoulcheckin/mybatis/mapper/VisaMapper.xml"/>
+      <mapper resource="com/seoulcheckin/mybatis/mapper/NavigatorMapper.xml"/>
+      <mapper resource="com/seoulcheckin/mybatis/mapper/BannerMapper.xml"/>
+      <mapper resource="com/seoulcheckin/mybatis/mapper/FileMapper.xml"/>
+      <mapper resource="com/seoulcheckin/mybatis/mapper/MyProgramMapper.xml"/>
+   </mappers>
+
+</configuration>

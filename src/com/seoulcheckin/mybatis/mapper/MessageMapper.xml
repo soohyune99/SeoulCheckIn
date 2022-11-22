@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Message">
+
+	<select id="selectMessageCount" parameterType="_int" resultType="_int" >
+	select count(message_recive_email) from tbl_message m join tbl_member mb
+	on m.message_recive_email = mb.member_number and member_number = #{messageNumber};
+	</select>
+	
+	<insert id="insert" parameterType="messageVO">
+      insert into tbl_message (message_recive_email, message_send_email, message_article) values(#{messageReceiveEmail},#{messageSendEmail},#{messageArticle})
+   </insert>
+	
+</mapper>
