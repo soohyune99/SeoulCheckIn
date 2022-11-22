@@ -1,0 +1,1903 @@
+
+/* 글꼴 설정 */
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+/* 초기 reset 설정 */
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+blockquote,
+big,
+body,
+center,
+canvas,
+caption,
+cite,
+code,
+command,
+datalist,
+dd,
+del,
+details,
+dfn,
+dl,
+div,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+font,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+input,
+select,
+textarea,
+button,
+kbd,
+keygen,
+label,
+legend,
+li,
+meter,
+nav,
+menu,
+object,
+ol,
+output,
+p,
+pre,
+progress,
+q,
+s,
+samp,
+section,
+small,
+span,
+source,
+strike,
+strong,
+sub,
+sup,
+table,
+tbody,
+tfoot,
+thead,
+th,
+tr,
+colgroup,
+col,
+tdvideo,
+tt,
+u,
+ul,
+var {
+    margin: 0;
+    padding: 0;
+}
+
+dl,
+ul,
+ol,
+menu,
+li {
+    list-style: none;
+}
+
+body,
+input,
+textarea,
+button,
+select,
+table {
+    font: 13px/1.4 "Noto Sans KR", sans-serif;
+    /* color: #666; */
+    -webkit-text-size-adjust: none;
+}
+
+input,
+button,
+textarea,
+select {
+    font-size: 1em;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+label {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    vertical-align: middle;
+}
+
+caption,
+.blind,
+.hidden,
+.ir {
+    overflow: hidden;
+    position: absolute;
+    top: auto;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    text-indent: -9999px px;
+}
+
+/* 홈페이지 _ 기본 설정 _구석구석과 동일 */
+html {
+    min-width: 320px;
+    height: 100%;
+}
+/* 기존 사용 폰트 */
+/* font-family: 13px/1.4 NotoSansKR, NotoSansJP, "돋움", Dotum, AppleGothic, Sans-serif; */
+
+/* ======================================= /초기 설정 ============================================== */
+/* ======================================= 헤더 ============================================== */
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Pretendard-Regular' !important;
+    overflow-y: hidden !important;
+}
+
+
+p {
+    font-family: 'Pretendard-Regular' !important;
+}
+/* headddder start */
+
+
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+#head{
+    background-color: white;
+    height: 50px;;
+    position: relative;
+    border-bottom: 1px solid #e2e3e3;
+    z-index: 20;
+
+}
+
+#header{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 30;
+    
+}
+
+
+.category{
+    margin-top: 19px;
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    margin-left: 10px;
+    
+    
+
+}
+
+#margin{
+    margin: 0 auto;
+    max-width: 1060px;
+}
+
+
+#seoul_checkinIMG{
+
+    margin-left: 9px;
+}
+
+#navigationdiv{
+    position: relative;
+}
+
+
+#navigation{
+    position: relative;
+    top: -36px;
+    left: 202px;
+}
+
+
+
+
+#navigation > ul > li {
+    float: left;
+    width: 13.5%;
+    height: 100%;
+    left: -49px;
+}
+
+    
+  
+
+  ul{
+    list-style:none;
+    
+  }
+
+  
+ a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
+ }
+
+
+ #searchicon{
+    position: relative;
+    top: -17px;
+    left: 84px;
+}
+
+
+.vertical::before {
+    display: inline-block;
+    content: "";
+    width: 1px;
+    height: 10px;
+    background-color: #e1e2e3;
+}
+
+#vertical{
+    top: -3px;
+    left: 1.1%;
+    position: relative;
+
+}
+
+#comservice{
+    font-size: 13px;
+    color: #666;
+    line-height: 23px;
+    border: 1px solid #e1e2e3;
+    border-radius: 15px;
+    padding: 5px 10px;
+    margin-left: 17px;
+    font-weight: 400;
+
+}
+
+
+#ul-2{
+
+    position: relative;
+    left: 0px;
+    width: 68%;
+    
+}
+
+#ul-3{
+
+    position: relative;
+    left: 10%;
+    width: 215%;
+}
+
+
+.ulul{
+    width: 105%;
+    position: absolute;
+    left: 0%;
+    top: 13px;
+    line-height: 33px;
+    display: none;
+}
+
+
+#ulul-2{
+    display: none;
+    position: relative;
+    top: -5px;
+    padding: 0px;
+}
+
+#search{
+    display: inline-block
+}
+
+.divdiv{
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+}
+
+body {
+    min-width: 320px;
+    height: 100%;
+    font-family: "Noto Sans KR", sans-serif !important;
+    color: #666;
+    -webkit-text-size-adjust: none;
+
+    overscroll-behavior: none;
+    overflow: hidden;
+}
+
+/* 헤더와 메인 사이 그림자 */
+header {
+    box-shadow: 0px 0px 6px 0px rgb(41 42 42 / 15%);
+    z-index: 50;
+
+}
+
+/* 헤더안 로고, 대한민국 구석구석 인풋 입력창 여행지도 모두 있는 div */
+div.main_top {
+    position: relative;
+    height: 89px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* h1 태그 */
+div.main_top > h1 {
+    float: left;
+    padding: 0px 0 0 0px;
+    margin: 0;
+}
+
+div.menu_btn {
+    display: inline-block;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+/* 대한민국 구석구석 로고 */
+div.logoAutumn {
+    position: relative;
+    display: inline-block;
+    top: 1px;
+    margin: 0px 0px 0px 47px;
+    padding: 0 0 0 0;
+}
+
+#img_gusuckgusuck {
+    width: 240px;
+    height: 35.5px;
+}
+
+/* 3줄 짜리 메뉴 선택 버튼 */
+#btnMenu {
+    overflow: hidden;
+    width: 25px;
+    height: 23px;
+    margin: 33px 0px 0 -32px;
+    background: url(https://korean.visitkorea.or.kr/resources/images/common/gnb_allmenu.gif) 0 0 / 25px 100% no-repeat;
+    text-indent: -9999px;
+    border: none;
+}
+
+/* [여행지도에서 검색해보세요] text input 칸 */
+/* input 감싸는 div */
+div.search {
+    position: relative;
+    float: left;
+    margin: 22px 0 0 33px;
+    width: 520px;
+}
+
+/* 입력창 */
+#inp_search {
+    padding: 0 50px 0 20px;
+    height: 45px;
+    line-height: 45px;
+    border: 0;
+    width: 100%;
+    font-size: 13px;
+    font-weight: bold;
+    color: #c2bdb8;
+    box-sizing: border-box;
+    background: #eef0f2;
+    outline: none;
+    border-radius: 10px;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+/* intput 안 돋보기 아이콘 */
+span>a.btn_search {
+    overflow: hidden;
+    text-indent: -9999px;
+    position: absolute;
+    top: 11px;
+    right: 20px;
+    width: 24px;
+    height: 24px;
+    background: url(https://korean.visitkorea.or.kr/resources/images/common/btn_gnb_search.png) 0 0 no-repeat;
+}
+
+/* 여행지도 아이콘 */
+span>a.map_go {
+    overflow: hidden;
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    /* top: 0px;
+    right: 0; */
+    background: url(https://korean.visitkorea.or.kr/resources/images/common/icon_gnb_map.png) 0 0 no-repeat;
+    text-indent: -9999px;
+    font-family:  NotoSansKR, NotoSansJP, "돋움", Dotum, AppleGothic, Sans-serif;/* 변경금지!!!!!!!!!!!!! */
+    color: #333 ;
+    text-decoration: none;
+    margin: 28px 5px 5px 23px;
+}
+
+/* 여행지도 wrap span tag */
+span.map_go_wrap {
+    width: 0;
+}
+
+/* 추후 API로 구현할 부분 */
+main>div.MAP-API {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+main>div.MAP-API>img {
+    /* background: url("app/assets/images/api-Map.png") 0 0 no-reapeat; */
+    height: 100%;
+    width: 100%;
+}
+
+/* <!-- =========  depth1  ========= --> */
+div.pc_depth1 {
+    height: 100%;
+    width: 405px;
+    /* background: salmon; _ 확인 완료  */
+    float: left;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    z-index: 15;
+    background: #fff;
+}
+
+main {
+    position: relative;
+
+}
+
+/* menu 선택 상단부 */
+div.map_menu {
+    height: 282px;
+    padding: 25px 25px 0;
+    position: relative;
+    border-right: 1px solid #e6e6e6;
+    border-top: 1px solid #e6e6e6;
+    box-shadow: inset 0px 2px 5px 1px rgb(41 42 42 / 8%);
+}
+
+/* 서울은 처음이지? */
+div.map_menu>strong.firstTimeSeoul {
+    display: block;
+    font-size: 15px;
+    font-weight: 549;
+    letter-spacing: -1.2px;
+    line-height: 26px;
+    color: #000;
+    padding-bottom: 2px;
+}
+
+/* 지역표시 _ 서울특별시 강남구 */
+div.map_menu>strong.stit_area {
+    display: block;
+    font-size: 22px;
+    font-weight: 549;
+    letter-spacing: -1.2px;
+    line-height: 26px;
+    color: #000;
+}
+
+
+/* 선택 표 양식 */
+/* div.map_menu {
+    height: 237px;
+    padding: 48px 25px 0;
+    position: relative;
+    border-right: 1px solid #e6e6e6;
+    /* background: #e0e1fb; 확인 완료
+} */
+/* pc_dehth1 아이콘 */
+div.map_menu>ul.tab {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3px 10px 0px 0px;
+    list-style: none;
+    font-family: "Noto Sans KR", sans-serif;
+    color: #666;
+    -webkit-text-size-adjust: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 12px;
+}
+/* 즐길거리 / 부동산 / 일자리 / 숙소 */
+div.map_menu>ul.tab.t1>li {
+    width: 25%;
+    text-align: center;
+    margin: 3px -1px 0px;
+}
+/* 카페 음식점 노래방 운동 공원 */
+div.map_menu>ul.tab.t2>li {
+    width: 20%;
+    text-align: center;
+    margin: 3px -1px 0px;
+}
+/* div.map_menu>ul.tab {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 27px 10px 0;
+
+} */
+
+div.map_menu>ul.tab>li.on>a {
+    color: #000;
+}
+
+/* 색색깔 아이콘 */
+a {
+    font-family: "Noto Sans KR", sans-serif;
+    text-decoration: none;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+/* 클릭 후 컬러 아이콘 이미지  */
+div.map_menu>ul.tab>li.on>a:before {
+    list-style: none;
+    text-align: center;
+    color: #000;
+    width: 45px;
+    height: 38.5px;
+    background: url("../../images/map/newAfter.png") no-repeat;
+    background-size: 39px 385px;
+    background-repeat: no-repeat;    
+}
+/* 클릭 전 흑백 아이콘 이미지 */
+div.map_menu>ul.tab>li>a:before {
+    list-style: none;
+    text-align: center;
+    color: #000;
+    content: '';
+    display: block;
+    width: 45px;
+    height: 38.5px;
+    margin: 0 auto 0 auto;
+    background-image: url("../../images/map/newBefore.png");
+    background-size: 39px 385px;
+    background-repeat: no-repeat;
+    letter-spacing: -0.3px;
+    position: relative;
+    margin-bottom: 8px;   
+}
+
+/* 각각의 아이콘별 크기조정 */
+
+div.map_menu>ul.tab>li>a.icon1-4:before {
+    background-position: center 0 !important;
+}
+
+div.map_menu>ul.tab>li>a.icon2-3:before {
+    background-position: center -38.5px !important;
+}
+
+div.map_menu>ul.tab>li>a.icon2-2:before {
+    background-position: center -77px !important;
+}
+
+div.map_menu>ul.tab>li>a.icon1-2:before {
+    background-position: center -115.5px !important;
+}
+
+div.map_menu>ul.tab>li>a.icon2-4:before {
+    background-position: center -154px !important;
+}
+div.map_menu>ul.tab>li>a.icon2-1:before {
+    background-position: center -192.5px !important;
+}
+div.map_menu>ul.tab>li>a.icon1-1:before {
+    background-position: center -231px !important;
+}
+div.map_menu>ul.tab>li>a.icon2-5:before {
+    background-position: center -269.5px !important;
+}
+div.map_menu>ul.tab>li>a.icon1-3:before {
+    background-position: center -308px !important;
+}
+div.map_menu>ul.tab>li>a.icon10:before {
+    background-position: center -346.5px !important;
+}
+
+/* div.map_menu > ul.tab > li > a.icon6{
+    background-position: 0 -192.5px !important;
+}
+div.map_menu>ul.tab>li>a.icon7:before {
+    background-position: center -339px !important;
+}
+
+div.map_menu>ul.tab>li>a.icon8:before {
+    background-position: center -395.5px !important;
+}
+
+div.map_menu>ul.tab>li>a.icon9:before {
+    background-position: center -452px !important;
+}
+
+div.map_menu>ul.tab>li>a.icon10:before {
+    background-position: center -508.5px !important;
+}
+
+div.map_menu>ul.tab>li>a.icon11:before {
+    background-position: center -565px !important;
+} */
+
+
+
+
+/* 목록 리스트  */
+/* 즐겨찾기 아이콘 */
+
+/* div.list_type1 > ul >  */
+li.parking>a.img {
+    background-image: url(https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=1ceb891b-05fc-4fc3-ae33-815789754f45);
+
+}
+
+/* menu_cont */
+div.menu_cont {
+    height: calc(100% - 285px);
+    overflow-y: scroll;
+    border-top: 1px solid #e6e6e6;
+}
+
+div.list_type1>ul>li {
+    font-family: "Noto Sans KR", sans-serif;
+    color: #333;
+    text-decoration: none;
+}
+
+div.list_type1>ul>li>a {
+    position: relative;
+    float: left;
+    width: 90px;
+    height: 90px;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    margin-right: 15px;
+}
+
+div.tit>a {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 700;
+    padding-right: 7px;
+    letter-spacing: -1px;
+    color: #333;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+ul#conlistul>li {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: start !important;
+}
+
+::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: start !important;
+}
+/* 첫번째 div */
+div.map_cont_wrap {
+    /*position: relative; absolute 변경 한 것  */
+    left: 0;
+    top: 89px;
+    height: calc(100% - 89px);
+    display: flex;
+    transition: .3s ease-in-out;
+}
+
+div.pc_cont {
+    height: 100%;
+    background: #fff;
+    display: flex;
+    box-shadow: 5px 0px 30px 0px rgb(98 99 100 / 30%);
+
+}
+
+/* div.map_menu {
+    height: 282px;
+    padding: 25px 25px 0;
+    position: relative;
+    border-right: 1px solid #e6e6e6;
+} */
+
+
+
+div.map_menu>ul.tab>li {
+    width: 20%;
+    text-align: center;
+    margin: 0 0 17px;
+    /* word-spacing: -2px;  : 혹시 더 많은 글자가 들어가게 되면 보기*/
+}
+
+div.map_menu>ul.tab>li.on>a {
+    color: #000;
+}
+
+div.map_menu>ul.tab>li>a {
+    display: block;
+    position: relative;
+    color: #767676;
+    font-size: 14px;
+    letter-spacing: -0.3px;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+div.menu_cont {
+    height: calc(100% - 333px);
+    overflow-y: scroll;
+    border-top: 1px solid #e6e6e6;
+}
+
+div.menu_cont::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+
+}
+div.menu_cont::-webkit-scrollbar-track {
+background-color: #cacaca90;
+
+}
+
+div.menu_cont::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background: #abadac;
+}
+
+div.list_type1>ul>li {
+    padding: 15px 20px;
+    border-bottom: 1px solid #f4f3f3;
+    overflow: hidden;
+}
+
+/* 첫번째 창 닫는 버튼 */
+div.map_cont_wrap>button.btn_fold {
+    width: 59px;
+    height: 104px;
+    position: absolute;
+    top: 41%;
+    left: 405px;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: url(https://korean.visitkorea.or.kr/resources/images/location/btn_fold.png) no-repeat;
+    text-indent: -9999px;
+    font-family: "Noto Sans KR", sans-serif;
+    color: #666;
+    -webkit-text-size-adjust: none;
+    border: 0 none;
+    cursor: pointer;
+}
+
+button.btn_fold {
+    appearance: auto;
+    writing-mode: horizontal-tb !important;
+    /*     font-style: ;
+    font-variant-ligatures: ;
+    font-variant-caps: ;
+    font-variant-numeric: ;
+    font-variant-east-asian: ;
+    font-weight: ;
+    font-stretch: ;
+    font-size: ;
+    font-family: ; */
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: buttonface;
+    margin: 0em;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
+
+/* div.list_type1 > ul > li  */
+div.info>em {
+    display: block;
+    padding: 6px 0 19px;
+    font-weight: 300;
+    font-size: 14px;
+    color: #666;
+    font-style: normal;
+}
+
+/* <!-- =========  depth2  ========= --> */
+
+div.pc_depth2.view {
+    display: none;
+    height: 100%;
+    width: 405px;
+    /*     background: goldenrod; _ 확인 완료 */
+    float: left;
+    position: fixed;
+    top: 50px;
+    left: 405px;
+    z-index: 20;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+div.pc_depth2 {
+    height: 100%;
+    width: 405px;
+    background: #fff;
+    display: none;
+    overflow-y: auto;
+}
+
+/* 두번째 창 닫는 버튼 */
+div.map_cont_wrap>button.btn_fold {
+    width: 59px;
+    height: 104px;
+    position: absolute;
+    top: 50%;
+    left: 405px;
+    transform: translateY(-50%);
+    z-index: 29;
+    background: url(https://korean.visitkorea.or.kr/resources/images/location/btn_fold.png) no-repeat;
+    text-indent: -9999px;
+    font: 13px/1.4 "Noto Sans KR", sans-serif;
+    color: #666;
+    -webkit-text-size-adjust: none;
+    border: 0 none;
+    cursor: pointer;
+}
+
+/* pc_depth2 두번째 창 스크롤바 디자인 */
+div.pc_depth2.view::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+div.pc_depth2.view::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background: #abadac;
+}
+div.pc_depth2.view::-webkit-scrollbar-track {
+    background: #cacaca90;
+}
+
+
+/* 2번째 페이지 큰 사진 _ 베너 */
+
+element.style {
+    background-image: url(https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=637aea7f-88a1-4374-b8b5-69e5d2b132e2);
+}
+
+div.detail_info>div.detail_img {
+    position: relative;
+    height: 267px;
+    /* 사진배너 들어갈 자리 높이만 맞춰놓은거. 추후 확인 필요 */
+    /* background: slateblue; 확인 완료 */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================강사님배너복붙코드=================== */
+/* ======================강사님배너복붙코드=================== */
+/* ======================강사님배너복붙코드=================== */
+/* ======================강사님배너복붙코드=================== */
+
+/* 강사님 사진 배너 */
+section.container {
+    /* 사용자에게 보여주어야 할 곳 */
+    height: 267px;
+    width: 405px;
+    margin: 0 auto;
+    /* 가운대 정렬 */
+    overflow: hidden;
+    /* 넘치는 것은 안보이게  */
+    position: relative;
+    /*  */
+}
+
+div.banner {
+    width: 2025px;
+    /* transform: translate(-180vw); 180이면 3번째 장면이 나옴 */
+}
+
+div.banner>div {
+    height: 267px;
+    width: 405px;
+    float: left;
+    /* img 가 다 div라서 위에서 아래로 되어있는데 float 줘서 한줄로 만듦!  */
+}
+
+div>img {
+    width: 100%;
+    /* 부모의 width에 적용되어야함. */
+    /* img 태그의 기본속성은 inline-block */
+}
+
+div.buttons>button {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+
+/* 탭 이동 화살표 >>>>>>>>>>>>>>>>*/
+div.swiper-button-next {
+    font-weight: bold;
+    line-height: 71.5px;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-style: none;
+    border-radius: 50%;
+    z-index: 1;
+    right: 5%;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background: url(https://korean.visitkorea.or.kr/resources/images/location/btn_slide01.png) no-repeat;
+}
+
+/* 탭이동 화살표 <<<<<<<<<<<<< */
+div.swiper-button-prev {
+    font-weight: bold;
+    line-height: 71.5px;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-style: none;
+    border-radius: 50%;
+    z-index: 1;
+    text-align: center;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background: url(https://korean.visitkorea.or.kr/resources/images/location/btn_slide01.png) no-repeat;
+    background-position: center -27px !important;
+}
+/* 좌우 클릭 버튼 */
+/* div.detail_info>div.detail_img>div.swiper-button-next {
+    text-indent: -9999px;
+    width: 26px;
+    height: 26px;
+    right: 25px;
+    margin-top: -13px;
+    background: url(https://korean.visitkorea.or.kr/resources/images/location/btn_slide01.png) no-repeat;
+} */
+
+/* div.detail_info div.detail_img>div.swiper-button-prev {
+    text-indent: -9999px;
+    width: 26px;
+    height: 26px;
+    margin-top: -13px;
+    background: url(https://korean.visitkorea.or.kr/resources/images/location/btn_slide01.png) no-repeat;
+} */
+
+
+/* div.prev {
+    left: 20px;
+}
+
+div.next {
+    right: 20px;
+}
+ */
+/* ======================/강사님배너복붙코드=================== */
+/* ======================/강사님배너복붙코드=================== */
+/* ======================/강사님배너복붙코드=================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+div.swiper-container {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
+div.detail_info>div.detail_img>div.swiper-slide>a {
+    display: block;
+    height: 267px;
+    /* 사진배너 들어갈 자리 높이만 맞춰놓은거. 추후 확인 필요 */
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    font-family: "Noto Sans KR", sans-serif;
+    color: #333;
+    text-decoration: none;
+}
+
+element.style {
+    transition-duration: 0ms;
+    transform: translate3d(-399px, 0px, 0px);
+}
+
+div.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+div.swiper-slide {
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+}
+
+element.style {
+    width: 399px;
+}
+
+
+/* 
+div.swiper-button-next {
+    background-image: url(https://korean.visitkorea.or.kr/resources/images/location/btn_slide01.png);
+}
+ */
+;
+
+div.swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    width: 27px;
+    height: 27px;
+    margin-top: -22px;
+    z-index: 10;
+    cursor: pointer;
+    background-size: 27px 44px;
+    background-repeat: no-repeat;
+    background-position: center -27px !important;
+}
+
+/* 몇장 중 몇장 */
+div.detail_info div.detail_img div.swiper-pagination {
+    width: 46px;
+    height: 26px;
+    left: auto;
+    right: 25px;
+    top: 20px;
+    line-height: 26px;
+    font-weight: 300;
+    font-size: 15px;
+    color: rgba(255, 255, 255, .5);
+    border-radius: 50px;
+    background: rgba(0, 0, 0, .5);
+    letter-spacing: -0.5px;
+}
+
+div.swiper-container-horizontal>div.swiper-pagination-bullets,
+div.swiper-pagination-custom,
+div.swiper-pagination-fraction {
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+}
+
+div.swiper-pagination {
+    position: absolute;
+    text-align: center;
+    -webkit-transition: .3s opacity;
+    -o-transition: .3s opacity;
+    transition: .3s opacity;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    z-index: 10;
+}
+
+div.swiper-container {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
+
+
+/*div.swiper-slide{사진배너 들어갈 자리 높이만 맞춰놓은거. 추후 확인 필요
+     height: 267px;
+    background: green;
+} */
+
+
+/* 내용 설명 */
+div.detail_data {
+    position: relative;
+    margin: 0 25px;
+    padding: 30px 0 0;
+}
+
+div.detail_data div.mark {
+    position: absolute;
+    right: 0;
+    top: 21px;
+}
+
+div.detail_data>em {
+    display: block;
+    font-size: 15px;
+    font-weight: 300;
+    color: #767676;
+    line-height: 18px;
+    font-style: normal;
+}
+
+/* 큰 이름 */
+div.detail_data>div.stit {
+    display: inline-block;
+    max-width: 100%;
+    padding: 7px 0 20px;
+}
+
+div.detail_data>strong.stit>a {
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 29px;
+    letter-spacing: -1.5px;
+    font-family: "Noto Sans KR", sans-serif;
+    color: #000;
+}
+
+div.detail_data>strong.stit:after {
+    content: '';
+    display: block;
+    margin-top: 1px;
+    height: 1px;
+    background: #000;
+}
+
+div.detail_data>strong.stit {
+    display: inline-block;
+    max-width: 100%;
+    padding: 7px 0 20px;
+}
+
+/* 중간 제목 */
+div.detail_data>strong.address {
+    display: block;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -1px;
+    color: #333;
+    overflow: hidden;
+    display: -webkit-box;
+    max-height: 48px;
+    word-break: keep-all;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin-bottom: 20px;
+}
+
+div.detail_data>span.km {
+    display: block;
+    padding: 7px 0 17px;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 300;
+    color: #666;
+}
+
+/* ## 태그들 */
+div.detail_data>ul.tag {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+div.detail_data>ul.tag>li {
+    display: inline-block;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 300;
+    color: #666;
+    margin-left: 8px;
+}
+
+div.detail_data>ul.tag>li:first-child {
+    margin: 0;
+}
+
+/* 하단 아이콘 */
+div.detail_data>div.btn {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    cursor: pointer;
+}
+
+div.detail_data>div.btn>button {
+    text-indent: -9999px;
+    background: url() no-repeat;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+}
+
+div.detail_data>div.btn>button.bookmark {
+    background-position: 0 -36px;
+}
+
+div.detail_data>div.btn>button.good {
+    background-position: 0 -108px;
+}
+
+div.detail_data>div.btn>button.course {
+    background-position: 0 -180px;
+}
+
+div.detail_data>div.btn>button+button {
+    margin-left: 15px;
+}
+
+/* 여행톡 */
+div.talk_wrap {
+    position: relative;
+    padding: 0 0 47px;
+}
+
+div.talk_wrap>ul.tab {
+    border-top: 1px solid #e6e6e6;
+}
+
+div.talk_wrap>ul.tab>li:last-child>a {
+    border-right: 0;
+}
+
+div.talk_wrap>ul.tab>li {
+    float: left;
+    width: 50%;
+    height: 42px;
+    color: #666666;
+
+}
+
+div.talk_wrap>ul.tab>li>a:first-child {
+    border-right: 1px solid #e6e6e6;
+    border-left: 0;
+}
+
+div.talk_wrap>ul.tab>li>a.on+.talk {
+    display: block;
+}
+
+div.talk_wrap>ul.tab>li>a.talk {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 74px;
+    width: 100%;
+    padding: 0 25px;
+}
+
+/* 여행톡  */
+div.talk_wrap>ul.tab {
+    border-top: 1px solid #e6e6e6;
+}
+
+div.talk {
+    width: 405px;
+    height: auto;
+    position: absolute;
+    top: 47px;
+    background: #fff;
+    /* background: blue; */
+    padding: 25px;
+    padding-bottom: 75px;
+}
+
+div.talk_wrap>ul.tab>li>a.on {
+    background: #fff;
+    color: #333;
+    font-weight: 400;
+    border-bottom: 0;
+}
+
+/* 톡남기기 */
+div.write {
+    width: 405px;
+    height: 400px;
+    position: absolute;
+    left: 0px;
+    top: 47px;
+    background: #fff;
+}
+
+div.talk_wrap>div.write>div.form {
+    border: 1px solid #e5e5e5;
+    width: 347px;
+}
+
+/* 톡남기기 */
+div.talk_wrap>div.tab>li>a.on {
+    background: #fff;
+    color: #333;
+    font-weight: 400;
+    border-bottom: 0;
+}
+
+div.talk_wrap>div.tab>li>a {
+    display: block;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    background: #f9f9f9;
+    box-sizing: border-box;
+    font-weight: 300;
+    font-size: 18px;
+    color: #999;
+    letter-spacing: -0.7px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+div.talk_wrap>div.tab>li>a.on+div.write {
+    display: block;
+    color: #333;
+    padding: 0 0 60px;
+}
+
+div.talk_wrap>div.tab>li>div.write {
+    display: none;
+    position: absolute;
+    left: 25px;
+    right: 25px;
+    top: 74px;
+}
+
+form#tform {
+    border: 1px solid #e5e5e5;
+    width: 347px;
+    height: 295px;
+    margin: 25px auto;
+}
+
+div.talk_wrap>div.write>textarea {
+    height: 120px;
+    border: 0;
+    width: 100%;
+    font-size: 16px;
+    box-sizing: border-box;
+    padding: 20px;
+    line-height: 20px;
+}
+
+textarea {
+    color: #535455;
+    padding: 5px;
+    border: 1px solid #bbb;
+    line-height: 1.167;
+    resize: none;
+}
+
+/* 밑에 버튼 */
+div.filebtn {
+    height: 60px;
+    border-top: 1px solid #f7f7f7;
+    text-align: right;
+    padding: 10px 10px 0 0;
+}
+
+div.talk_wrap>div.write>div.filebtn>input[type="file"] {
+    position: absolute;
+    width: 54px;
+    height: 40px;
+    padding: 0;
+    clip: rect(0, 0, 0, 0);
+    border: none;
+    box-sizing: border-box;
+}
+/* 첨부파일 아이콘 */
+div.talk_wrap>div.write>div.filebtn>label {
+    display: inline-block;
+    width: 54px;
+    height: 40px;
+    background: url(https://korean.visitkorea.or.kr/resources/images/location/btn_reply_file.png) no-repeat;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-indent: -9999px;
+    font-size: 0;
+}
+
+/* div.talk_wrap>div.write>div.filebtn>a.btn_apply {
+    margin-left: 8px;
+    display: inline-block;
+    width: 73px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 15px;
+    background: #13294b;
+    text-align: center;
+    vertical-align: middle;
+} */
+
+div.talk_wrap>ul.tab>li:last-child a {
+    border-right: 0;
+}
+
+/* 현재 지도에서 검색 등 버튼들 */
+div.map_btn {
+    position: absolute;
+    right: 20px;
+    top: 10%;
+    width: 47px;
+    height: 160px;
+    cursor: pointer;
+}
+/* 현재 내 위치 아이콘 */
+div.map_btn>button.location {
+    width: 47px;
+    height: 47px;
+    text-indent: -9999px;
+    background: url(https://korean.visitkorea.or.kr/resources/images/location/btn_location.png) no-repeat;
+    box-shadow: 1px 2px 13px 0px rgb(19 22 22 / 33%);
+    border-radius: 100%;
+    border-style: none;
+        cursor: pointer;
+
+}
+/* 현재위치에서 검색 아이콘 */
+div.map_btn>button.refresh {
+    position: fixed;
+    right: 660px;
+    top: 10%;
+    width: 188px;
+    height: 46px;
+    background: #fff;
+    box-shadow: 1px 2px 13px 0px rgb(19 22 22 / 33%);
+    border-radius: 50px;
+    font-size: 16px;
+    color: #000;
+    letter-spacing: -0.8px;
+    border-style: none;
+    cursor: pointer;
+}
+
+div.map_btn>button.refresh:before {
+    content: '';
+    display: inline-block;
+    width: 22px;
+    height: 18px;
+    vertical-align: -2px;
+    margin-right: 4px;
+    background: url(https://korean.visitkorea.or.kr/resources/images/location/btn_refresh1.png) no-repeat;
+    border-style: none;
+}
+
+div.talk_wrap>.tab {
+    border-top: 1px solid #e6e6e6;
+}
+
+div.talk_wrap>div.talk>div.r_btn>button {
+    float: left;
+    text-indent: -9999px;
+}
+
+div.talk_wrap>div.talk>div.btn_report {
+    width: 17px;
+    height: 18px;
+    background: url(../images/location/btn_report.png) no-repeat;
+}
+
+/* 톡남기기 댓글 */
+div.talk_wrap>div.write>div.form {
+    border: 1px solid #e5e5e5;
+}
+
+textarea#comment {
+    height: 245px;
+    border: 0;
+    width: 100%;
+    font-size: 16px;
+    box-sizing: border-box;
+    padding: 20px;
+    line-height: 20px;
+
+    color: #535455;
+    /*  border: 1px solid #bbb; */
+    line-height: 1.167;
+    resize: none;
+}
+
+/* 댓글 감싸는 태그 */
+div.talk_wrap>div.tab>li>div.write {
+    display: none;
+    position: absolute;
+    left: 25px;
+    right: 25px;
+    top: 74px;
+}
+
+
+div.talk_wrap>div.write>div#tform>div.filebtn {
+    height: 60px;
+    border-top: 1px solid #f7f7f7;
+    text-align: right;
+    padding: 10px 10px 0 0;
+}
+
+/* 첨부파일 사진 아이콘 */
+#fileUp {
+    display: inline-block;
+    width: 54px;
+    height: 40px;
+    background: url(https://korean.visitkorea.or.kr/resources/images/location/btn_reply_file.png) no-repeat;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-indent: -9999px;
+    font-size: 0;
+    height: 60px;
+    border-top: 1px solid #f7f7f7;
+    text-align: right;
+    padding: 20px 0px 0 0;
+}
+
+/* 남색 등록 버튼 */
+a.btn_apply {
+    margin-left: 2px;
+    display: inline-block;
+    width: 72px;
+    height: 30px;
+    line-height: 27px;
+    color: #fff;
+    font-size: 14px;
+    background: lightgray;
+    text-align: center;
+    vertical-align: bottom;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+/* 닫기 버튼  */
+button.layer_close {
+	display: none;
+    position: absolute;
+    left: 810px;
+    top: 11%;
+    width: 32px;
+    height: 32px;
+    text-indent: -9999px;
+    background: url(https://korean.visitkorea.or.kr/resources/images/location/btn_close_depth2.png) no-repeat;
+    z-index: 29;
+    border: none;
+    cursor: pointer;
+}
+
+/* 여행톡 */
+div.talk_wrap>div.tab>li>a.on+.talk {
+    display: block;
+}
+
+div.talk_wrap>div.talk>ul>li:first-child {
+    padding: 0 0 25px;
+}
+
+/* div.talk_wrap>div.talk> */ul.list_reply>li {
+    display: flex;
+    padding: 6px 6px 6px;
+    border-bottom: 0.3px solid #ddd;
+    position: relative;
+    text-align: start;
+    font-family: url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+}
+
+/* div.talk_wrap > div.talk > */
+div.profile {
+    width: 70px;
+}
+
+/* div.talk_wrap > div.talk >  */
+div.profile>div.img {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    background-image: url(https://phinf.pstatic.net/contact/20211011_129/16339327235051pC4r_JPEG/image.jpg);
+}
+
+/* div.talk_wrap > div.talk >  */
+div.comment>p {
+    padding-right: 10px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333;
+    font-weight: normal;
+}
+
+/* div.talk_wrap >div.talk >  */div.comment {
+    flex: 2 1 0px;
+}
+
+/* div.talk_wrap > div.talk > */
+div.comment>div.date {
+    padding: 6px 0 0;
+    font-weight: normal;
+
+}
+
+/* div.talk_wrap >  div.talk >*/
+button.btn_report {
+    width: 17px;
+    height: 18px;
+    background: url(https://korean.visitkorea.or.kr/resources/images/location/btn_report.png) no-repeat;
+    border: none;
+}
+
+div.icon{
+    position: absolute;
+    top: 35px;
+    right: 0;
+    width: 17px;
+    height: 17px;
+    background: url(https://korean.visitkorea.or.kr/resources/images/location/ico_naver.png) 0 0 /100% 100% no-repeat;
+   
+}
+
+/* div.talk_wrap > div.talk > */
+div.profile>div.icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    text-indent: -9999px;
+}
+
+
+/* 여행톡 톡남기기 텍스트 크게 정렬 */
+div.talk_wrap>ul.tab>#viewtalklist {
+/*     line-height: 2.7; */
+    text-align: center;
+    font-size: 15px;
+    /* height: 42px; */
+    /* margin-top: -3px; */
+    font-weight: 570;
+    color: #000;
+/*     font-family: "Noto Sans KR", sans-serif; */
+    
+    /* border-bottom: solid #e6e6e6; */
+}
+
+.talk_wrap .tab>li>a {
+    display: block;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    background: #f9f9f9;
+    box-sizing: border-box;
+    font-weight: 300;
+    font-size: 18px;
+    color: #999;
+    letter-spacing: -0.7px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+div.talk_wrap>ul.tab>#addtalklist {
+    line-height: 2.7;
+    text-align: center;
+    font-size: 13px;
+    height: 42px;
+    margin-top: -3px;
+    font-weight: 700;
+    color: #999;
+    background: #f9f9f9;
+    box-sizing: border-box;
+    border-bottom: solid #e6e6e6;
+    border-top: 1px solid #e6e6e6;
+}
+
+
+/* div.talk_wrap > div.talk >  */div.reply_more > button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    background: #fff;
+    border-top: solid 1px #e6e6e6;
+}
+
+/* div.talk_wrap > div.talk >  */div.reply_more button:after {
+    content: '';
+    display: inline-block;
+    width: 17px;
+    height: 10px;
+    margin-left: 8px;
+    background: url(https://korean.visitkorea.or.kr/resources/images/location/btn_reply_more.png
+    ) no-repeat;
+}
+
+
+
+
+
+
+
+/* 좋아요 빨간 하트 변경 */
+/* div.detail_data > div.btn > button.good.on {
+    text-indent: -9999px;
+    background: url(https://korean.visitkorea.or.kr/resources/images/location/icon_btn01.png ) no-repeat;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+} */
+
+label.ant-radio-wrapper > input {
+    background: red;
+}
+
+
+div#first {
+    display: none;
+}
+
+li#viewtalklist a.clicktab, li#addtalklist a.clicktab {
+    background-color: #FFFFFF !important;
+    color: #333333 !important;
+    /* font-weight: bold; */
+    border-bottom: none;
+}
+
+li#viewtalklist a.non_clicktab, li#addtalklist a.non_clicktab {
+    background-color: #f9f9f9 !important;
+    color: #999999 !important;
+    /* font-weight: bold; */
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.btn_apply.ContentComment.on:hover{
+    background-color: #132949;
+}
+
+#comment:focus {
+    outline: none;
+}

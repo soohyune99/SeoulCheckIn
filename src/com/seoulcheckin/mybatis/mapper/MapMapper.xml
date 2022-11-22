@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Map">
+	
+	<select id="selectAll" parameterType="string" resultType="mapVO">
+		select map_number, map_classification, map_name, map_address, map_photo from tbl_map where map_classification = #{mapClassification}
+	</select>
+	
+	<select id="selectOne" parameterType="_int" resultType="mapVO">
+		select * from tbl_map where map_number = #{mapNumber}
+	</select>
+	
+	<select id="selectTotalMap" parameterType="string" resultType="mapVO">
+		select map_number, map_approval, map_classification, map_name, map_address, map_phone, map_price, map_introduce, map_photo, map_house_openingdate, map_house_type, map_house_trading, map_house_size, map_job_paytype, map_job_closingdate, map_landmark_time, member_number
+		from tbl_map
+	</select>
+	
+	<select id="selectCount" resultType="_int">
+		select count(map_number) from tbl_map
+	</select>
+	
+	<select id="selectPage" parameterType="map" resultType="mapVO">
+		select map_number, map_approval, map_classification, map_name, map_address, map_phone, map_price, map_introduce, map_photo, map_house_openingdate, map_house_type, map_house_trading, map_house_size, map_job_paytype, map_job_closingdate, map_landmark_time, member_number
+		from tbl_map
+		order by map_number desc limit #{startRow}, #{rowCount}
+	</select>
+	
+	<delete id="delete" parameterType="_int">
+		delete from tbl_map where map_number = #{mapNumber}
+	</delete>
+	
+	<insert id="insert" parameterType="mapVO">
+		insert into tbl_map(map_approval, map_classification, map_name, map_address, map_phone, map_price, map_introduce, map_photo, map_house_openingdate, map_house_type, map_house_trading, map_house_size, map_job_paytype, map_job_closingdate, map_landmark_time)
+		values(#{mapApproval}, #{mapClassification}, #{mapName}, #{mapAddress}, #{mapPhone}, #{mapPrice}, #{mapIntroduce}, #{mapPhoto}, #{mapHouseOpeningDate}, #{mapHouseType}, #{mapHouseTrading}, #{mapHouseSize}, #{mapJobPayType}, #{mapJobClosingDate}, #{mapLandmarkTime})
+	</insert>
+	
+</mapper>

@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+}
+body{
+    background-color: #f8f8f8;
+    font-family: "Noto Sans KR", sans-serif !important;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* 본문 */
+.container{
+    padding-bottom: 100px;
+    margin: 0 auto;
+    position: relative;
+    max-width: 1060px;
+    margin-top: 40px;
+}
+
+.container > nav{
+    position: relative;
+    line-height: normal;
+}
+
+h2{
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+
+.container > nav > h2{
+    font-size: 23px;
+}
+
+.profile > p{
+    font-weight: 20px;
+    font-weight: 700;
+    color: #333;
+    padding: 50px 0 20px;
+}
+
+.navButton{
+    width: 100%;
+    display: none;
+    position: relative;
+    border-top: 1px solid rgba(0,0,0,.1);
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    cursor: pointer;
+}
+
+.mainContainer{
+    margin: 0 auto;
+    max-width: 1060px;
+    position: relative;
+    height: 636.328px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mainAside{
+    padding: 42px 20px 41px;
+    border: 1px solid #e1e2e3;
+    border-radius: 3px;
+    background-color: #fff;
+    margin-bottom: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 250px;
+    height: 100%;
+}
+
+.mainContainer > aside > .header{
+    width: 100%;
+    text-align: center;
+    width: 208px;
+    height: 194.575px;
+}
+
+.aside{
+    line-height: 1.4;
+    width: 208px;
+    height: 77px;
+}
+
+.asideImg{
+    background-image: url(https://static.wanted.co.kr/images/profile_default.png);
+    display: inline-block;
+    position: relative;
+    width: 77px;
+    height: 77px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: 50%;
+
+}
+
+.inputImg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+
+.inputImg > input[type=file]{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+input[type="file"] {
+    display: block;
+}
+
+label[for='attach'] div{
+    background-image: url(https://static.wanted.co.kr/images/profile_default.png);
+    display: inline-block;
+    position: relative;
+    width: 77px;
+    height: 77px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: 50%;
+    cursor: pointer;
+
+}
+
+.cameraIcon{
+    position: absolute;
+    right: -4px;
+    bottom: 0;
+    padding: 8px;
+    font-size: 16px;
+    color: #999;
+    line-height: 1;
+    border-radius: 50%;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 10%);
+    background-image: url(../../images/member/cameraIcon.png);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background-color: #fff;
+}
+.asideMe{
+    margin-top: 31px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.07;
+    color: #999;
+}
+
+.asideMeName{
+    line-height: 1.3;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.asideMeEmail{
+    margin-top: 20px;   
+    line-height: 1.3;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.asideMeTel{
+    margin-top: 10px; 
+}
+
+
+
+.list{
+    margin-top: 42px;
+    width: 208px;
+    height: 112px;
+    border-top: 1px solid #e1e2e3;
+}
+
+.list > a{
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2;
+    
+}
+
+.list > a > span{
+    word-break: break-word;
+    line-height: 22px;
+    color: #333333;
+}
+
+.list > a > strong{
+    font-size: 18px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.myPagelist_end {
+	padding-bottom: 15px;
+    border-bottom: 1px solid #e1e2e3;
+}
+
+section{
+    float: left;
+    width: 74.5283018868%;
+    padding-left: 270px;
+}
+
+.withdrawal{
+    background-color: #fff;
+    border: 1px solid #e1e2e3;
+    border-radius: 3px;
+}
+
+.block{
+    padding: 30px;
+}
+
+.block  > h3{
+    margin: 0;
+    color: #333;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 600;
+}
+
+.block > ul{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.withdrawal .block ul li{
+    margin-bottom: 18px;
+    color: #999;
+    line-height: 1.4;
+    list-style: initial;
+}
+
+.withdrawal .block > button{
+    width: 230px;
+    height: 50px;
+    padding: 0 20px;
+    border-radius: 25px;
+    background: #36f;
+    border: 1px solid #36f;
+    display: block;
+    margin: 50px auto 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Banner">
+
+	<select id="selectAll" resultType="bannerVO">
+		select banner_number, banner_name from tbl_banner order by banner_number
+		desc limit 6
+	</select>
+
+	<select id="selectList" resultType="bannerVO">
+		select banner_number, banner_name from tbl_banner order by banner_number desc
+	</select>
+	
+	<delete id="delete" parameterType="_int">
+		delete from tbl_banner where banner_number = #{bannerNumber}
+	</delete>
+
+	<insert id="insert" parameterType="bannerVO">
+		insert into tbl_banner(banner_name)
+		values(#{bannerName})
+	</insert>
+</mapper>

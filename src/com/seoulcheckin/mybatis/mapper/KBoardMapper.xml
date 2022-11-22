@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="KBoard">
+
+	<select id="selectAll" parameterType="map" resultType="kBoardDTO">
+		select K_board_number, K_board_title, K_board_article, K_board_date, K_board_photo, m.member_number, member_name, member_email
+		from tbl_member m join tbl_K_board b on m.member_number = b.member_number
+	</select>
+	
+	<insert id="insert" parameterType="kBoardVO">
+		insert into tbl_K_board ( K_board_title, K_board_article, K_board_photo, member_number)
+		values (#{kBoardTitle}, #{kBoardArticle}, #{kBoardPhoto}, #{memberNumber}) 
+	</insert>
+	
+	<select id="select" parameterType="_int" resultType="kBoardDTO">
+		select  K_board_number, K_board_title, K_board_article,  K_board_date, K_board_photo, m.member_number, member_email, member_name
+		from tbl_member m join tbl_K_board b on K_board_number = #{kBoardNumber} and m.member_number = b.member_number 
+	</select>
+	
+	<delete id="delete" parameterType="_int">
+		delete from tbl_K_board where K_board_number = #{kBoardNumber}
+	</delete>
+	
+	<update id="update" parameterType="kboardVO">
+		update tbl_K_board
+		set K_board_title = #{kBoardTitle}, K_board_article = #{kBoardArticle}
+		where K_board_number = #{kBoardNumber}
+	</update>
+	
+	<select id="selectAdmin" parameterType="map" resultType="kboardDTO">
+		select K_board_number, K_board_title, K_board_article, K_board_date, K_board_photo, k.member_number, m.member_name
+		from tbl_K_board k join tbl_member m on k.member_number = m.member_number
+		order by K_board_number desc limit #{startRow}, #{rowCount}
+	</select>
+	
+	<select id="selectCount" parameterType="_int" resultType="_int">
+		select count(K_board_number) from tbl_k_board
+	</select>
+	
+	<!-- mypage  -->
+	<select id="myBoardCount" parameterType="_int" resultType="_int">
+		select count(K_board_number) from tbl_K_board where member_number = #{memberNumber}
+	</select>
+	
+	<select id="myBoard" parameterType="_int" resultType="kBoardDTO">
+		select tm.member_name, K_board_date, K_board_title, K_board_article
+		from tbl_K_board kb join tbl_member tm on kb.member_number = tm.member_number and kb.member_number = #{memberNumber}
+		order by K_board_number desc limit 0,2;
+	</select>
+	
+</mapper>

@@ -1,0 +1,123 @@
+body{
+/*     background-color: #f8f8f8; */
+}
+
+.modal_background.memberType{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1400;
+}
+
+.modal_background p {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    color: inherit;
+}
+
+.modal_box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    text-align: center;
+    border-radius: 3px;
+    width: 668px;
+    height: 418px;
+    line-height: 1.43;
+}
+
+.modal_Header{
+    padding-bottom: 20px;
+    color: #333;
+}
+
+.welcome{
+    margin-top: 37px;
+}
+
+#membertype_closebutton{
+    background-color: white;
+    border: none;
+    padding: 15px;
+    position: absolute;
+    top: 0%;
+    right: 2%;
+
+}
+
+.peopleWrapper{
+    display: flex;
+    height: 310px;
+}
+
+.Korean{
+    border: 1px solid #e5e7ea;
+    margin-left: 34px;
+    width: 43%;
+    height: 94%;
+}
+
+.foreigner{
+    border: 1px solid #e5e7ea;
+    margin-left: 25px;
+    width: 43%;
+    height: 94%;
+}
+
+p.title{
+    color: #494949;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 15px 0px 15px 0px;
+}
+
+p.title2{
+    color: #494949;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 15px 0px 15px 0px;
+}
+
+.image1_wrap{
+    width: 200px;
+    margin: 0 auto;
+    padding: 15px 0 25px;
+}
+
+#image1{
+    width: 130px;
+    height: 130px;
+}
+
+.image2_wrap{
+    width: 160px;
+    margin: 0 auto;
+    padding: 15px 0 25px;
+}
+
+#image2{
+    width: 130px;
+    height: 130px;
+}
+
+
+.peopleWrapper button.orange{
+    background-color: #f63;
+    width: 280px;
+    height: 52px;
+    line-height: 52px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 1px;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+}
+

@@ -1,0 +1,170 @@
+
+
+.FeaturedJobList_featured__Lx_Rq {
+    position: relative;
+    width: 1060px;
+    height: 395.400px;
+    padding: 70px 0 50px;
+    margin: 0 auto;
+}
+
+article{
+    display: block;
+}
+
+
+.FeaturedJobList_featured__title__CrAd5 {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.FeaturedJobList_featured__title__CrAd5>h2 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.05;
+    color: #111;
+}
+.List_List__kDrrx{
+    text-align: center;
+}
+.List_List_container__JnQMS>ul {
+    margin: -10px;
+    padding: 0;
+}
+
+*:before{
+    box-sizing: border-box;
+}
+
+.List_List_container__JnQMS>ul li {
+    width: 250px;
+    height: 320.7px;
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+}
+.Card_className__u5rsb{
+    width: 250px;
+    height: 320.700px;
+}
+.Card_className__u5rsb>a {
+    display: block;
+    width: 250px;
+    height: 320.700px;
+}
+
+.Card_className__u5rsb header {
+    padding-bottom: 75%;
+    position: relative;
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 1px rgb(0 0 0 / 10%);
+}
+
+.Card_className__u5rsb header .bookmarkBtn {
+    position: absolute;
+    background: none;
+    padding: 8px 6px;
+    width: 42px;
+    height: 42px;
+    top: 0;
+    right: 0;
+    flex-direction: row;
+    z-index: 1;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.Card_className__u5rsb header button {
+    border-radius: 3px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    justify-content: center;
+    display: flex;
+}
+button {
+    margin: 0;
+    border: 0;
+}
+.Card_className__u5rsb .body {
+    padding: 14px 0;
+}
+
+.Card_className__u5rsb .body .job-card-position {
+    text-overflow: ellipsis;
+    display: -webkit-box;
+}
+.Card_className__u5rsb .body .job-card-position {
+    position: relative;
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2;
+    max-height: 2.4em;
+    overflow: hidden;
+    text-align: left;
+    word-break: break-word;
+}
+
+.Card_className__u5rsb .body .job-card-company-name {
+    color: #333;
+    font-weight: 600;
+}
+
+.Card_className__u5rsb .body .job-card-company-name {
+    font-size: 14px;
+    line-height: normal;
+    text-align: left;
+    word-break: break-word;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.Card_className__u5rsb .body .job-card-company-location {
+    font-weight: 400;
+    color: #999;
+}
+
+.Card_className__u5rsb .body .job-card-company-location{
+    font-size: 14px;
+    line-height: normal;
+    text-align: left;
+    word-break: break-word;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.Card_className__u5rsb .body .addressDot {
+    margin: 0 3px;
+    top: -4px;
+    position: relative;
+}
+
+.Card_className__u5rsb .body .reward {
+    margin-top: 10px;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    word-break: break-word;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.clearfix{
+    display: flex;
+}
+
+.clearfix:after{
+    clear: both;
+}

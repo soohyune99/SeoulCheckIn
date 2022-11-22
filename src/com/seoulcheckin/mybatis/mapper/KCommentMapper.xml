@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="KComment">
+	<select id="myCommentCount" parameterType="_int" resultType="_int">
+		select count(K_comment_number) from tbl_K_comment where member_number = #{memberNumber}
+	</select>
+	
+	<select id="selectAll" parameterType="_int" resultType="kcommentDTO">
+		select K_comment_number, K_comment_article, K_comment_date, K_board_number, m.member_number, member_name 
+		from tbl_member m join tbl_K_comment c
+		on K_comment_number = #{kCommentNumber} and m.member_number = c.member_number
+		order by K_comment_date desc
+	</select>
+	
+	<insert id="insert" parameterType="kcommentVO">
+		insert into tbl_K_comment (K_comment_article, member_number, K_board_number)
+		values (#{kCommentArticle}, #{memberNumber}, #{kBoardNumber})
+	</insert>
+		
+	<delete id="delete" parameterType="_int">
+		delete from tbl_K_comment where K_comment_number = #{kCommentNumber}
+	</delete>
+	
+	<update id="update" parameterType="kcommentVO">
+		update tbl_K_comment
+		set K_comment_article = #{kCommentArticle}
+		where K_comment_number = #{kCommentNumber}
+	</update>
+	
+	
+</mapper>

@@ -1,0 +1,200 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Pretendard-Regular' !important;
+}
+
+p {
+    font-family: 'Pretendard-Regular' !important;
+}
+/* headddder start */
+
+
+
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+#head{
+    background-color: white;
+    height: 50px;
+    position: relative;
+    border-bottom: 1px solid #e2e3e3;
+    z-index: 20;
+    left: -13px;
+    
+    
+    
+
+}
+
+#header{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 30;
+    
+}
+
+
+.category{
+    margin-top: 19px;
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    margin-left: 10px;
+    
+    
+
+}
+
+#margin{
+    margin: 0 auto;
+    max-width: 1060px;
+}
+
+
+#seoul_checkinIMG{
+
+    margin-left: 9px;
+}
+
+#navigationdiv{
+    position: relative;
+    margin: revert;
+}
+
+
+#navigation{
+    position: relative;
+    top: -36px;
+    left: 202px;
+}
+
+
+
+
+#navigation > ul > li {
+    float: left;
+    width: 13.5%;
+    height: 100%;
+    left: -49px;
+}
+
+    
+  
+
+  ul{
+    list-style:none;
+    
+  }
+
+  
+ a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
+ }
+
+
+ #searchicon{
+    position: relative;
+    top: -17px;
+    left: 84px;
+}
+
+
+input#email:focus{
+	border: 1px solid blue;
+}
+
+.vertical::before {
+    display: inline-block;
+    content: "";
+    width: 1px;
+    height: 10px;
+    background-color: #e1e2e3;
+}
+
+#vertical{
+    top: -3px;
+    left: 1.1%;
+    position: relative;
+
+}
+
+#comservice{
+    font-size: 13px;
+    color: #666;
+    line-height: 23px;
+    border: 1px solid #e1e2e3;
+    border-radius: 15px;
+    padding: 5px 10px;
+    margin-left: 17px;
+    font-weight: 400;
+
+}
+
+
+#ul-2{
+
+    position: relative;
+    left: 0px;
+    width: 68%;
+    
+}
+
+#ul-3{
+
+    position: relative;
+    left: 10%;
+    width: 215%;
+}
+
+
+.ulul{
+    width: 105%;
+    position: absolute;
+    left: 0%;
+    top: 13px;
+    line-height: 33px;
+    display: none;
+}
+
+
+#ulul-2{
+    display: none;
+    position: relative;
+    top: -5px;
+    padding: 0px;
+}
+
+#search{
+    display: inline-block
+}
+
+.divdiv{
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+}
+
+
+/* header end */

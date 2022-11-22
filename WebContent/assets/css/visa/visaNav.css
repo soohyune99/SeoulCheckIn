@@ -1,0 +1,262 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	text-decoration: none;
+}
+
+body {
+	background-color: #f8f8f8;
+	font-family: "Noto Sans KR", sans-serif !important;
+	width: 100%;
+	height: 100%;
+}
+
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* 본문 */
+.entryWarp {
+	position: relative;
+	width: 1520px;
+	height: 270px;
+	min-height: 350px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	margin-bottom: 40px;
+	background-position: 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #5071dc;
+}
+
+.entryContainer {
+	width: 1060px;
+	margin: 0 auto;
+}
+
+.searchBar {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -24px;
+	width: 1520px;
+	height: 45px;
+}
+
+.searchbarContainer {
+	width: 1060px;
+	height: 45px;
+	margin: 0 auto;
+	/* padding-left: 10px; */
+}
+
+.searchBox  :last-child {
+	border-right: 0;
+}
+
+.searchBox {
+	width: 1080px;
+	height: 45px;
+	background: #fff;
+	box-shadow: 0 2px 2px 0 rgba(1 1 1/ 20%);
+}
+
+.categorySelect {
+	position: relative;
+	display: inline-block;
+	vertical-align: sub;
+	width: 200px;
+	height: 43px;
+	border-right: 1px solid #eee;
+}
+
+.selectGroup {
+	height: 43px;
+	border: none;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	position: relative;
+	width: 200px;
+	height: 43px;
+	border-radius: 5px;
+	background-color: #fff;
+	font-size: 15px;
+}
+
+.selectGroup .visa_sel {
+	width: 90%;
+}
+
+/* @media (min-width: 1200px){
+.selectGroup {
+    display: inline-flex;
+}
+} */
+/* 
+button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+} */
+#visaBtn {
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	height: 40px;
+	padding-right: 20px;
+	padding-left: 20px;
+	border-radius: 9999px;
+	background-color: #36f;
+	margin-left: auto;
+	white-space: nowrap;
+	color: #fff;
+}
+
+.NotificationManager_NotificationManager_wrapper__JmH6R {
+	position: relative;
+}
+
+@media ( min-width : 1200px) {
+	.NotificationManager_NotificationManager__X1DXD.is-desktop {
+		display: -ms-inline-flexbox;
+		display: inline-flex;
+	}
+}
+
+.NotificationManager_NotificationManager__X1DXD {
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	height: 40px;
+	padding-right: 20px;
+	padding-left: 20px;
+	border-radius: 9999px;
+	background-color: #36f;
+	margin-left: auto;
+	white-space: nowrap;
+	color: #fff;
+}
+
+svg:not(:root) {
+	overflow: hidden;
+}
+
+.NotificationManager_NotificationManager_icon__l78H_ {
+	margin-right: 5px;
+}
+
+/* 비자 테이블 */
+.navBody {
+	width: 100%;
+	max-width: 1060px;
+	margin: 0 auto 80px;
+	padding-left: 20px;
+}
+
+.navTable {
+	margin: 95px 0 40px;
+	padding: 55px;
+    height: fit-content;
+    background: #fff;
+}
+
+.navTitle {
+	font-size: 40px;
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1;
+	letter-spacing: normal;
+	color: #258bf7;
+	margin: 0 0 20px;
+	word-break: keep-all;
+}
+
+.navSubTitle {
+	font-size: 20px;
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1;
+	letter-spacing: normal;
+	color: #000;
+	margin: 0 0 40px;
+	word-break: keep-all;
+}
+
+.resultTable {
+	margin-bottom: 30px;
+	width: 100%;
+	border-top: 1px solid #c4c4c4;
+	border-bottom: 1px solid #ccc;
+}
+
+thead, tbody {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+.resultTable thead th {
+	text-align: center;
+	color: #3b3a3a;
+	padding: 12px 0 13px 0;
+	border-bottom: 1px solid #ccc;
+	vertical-align: middle;
+	background: url(/images/ico/th_bar.gif) #f6f6f6 no-repeat right center;
+}
+
+.resultTable tbody td.resonName {
+	padding: 10px 0px;
+}
+
+.resultTable tbody td {
+	padding: 6px 7px;
+	border-bottom: 1px solid #ccc;
+	vertical-align: middle;
+}
+
+.resonName {
+	text-align: center !important;
+}
+
+table td {
+	line-height: 14px;
+	color: #252525;
+}
+
+.resultTable a.che_tit {
+	display: inline-block;
+	text-decoration: none;
+}
+
+.nameBox {
+	display: inline-block;
+	text-decoration: none;
+	border: 1px solid #d4d4d4;
+	border-radius: 6px;
+	width: 128px;
+	padding: 5px 0;
+	color: #272727;
+}
+
+.resonDetail {
+	line-height: 17px;
+}
+
+.resonDetail  input {
+	vertical-align: middle;
+	margin-right: -4px;
+	color: #272727;
+}
